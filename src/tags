@@ -1,0 +1,387 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AR	Makefile	/^AR            = ar cqs$/;"	m
+ARCH	Makefile	/^ARCH = $(shell getconf LONG_BIT)$/;"	m
+ARRAY_SIZE	get_media_devices.c	31;"	d	file:
+AVCODEC_MAX_AUDIO_FRAME_SIZE	head.h	75;"	d
+AVCODEC_MAX_AUDIO_FRAME_SIZE	head.h	77;"	d
+AVFILE_H	avfile.h	2;"	d
+AVFile	avfile.cpp	/^AVFile::AVFile()$/;"	f	class:AVFile
+AVFile	avfile.h	/^class AVFile$/;"	c
+AVFile_Ctx	head.h	/^class AVFile_Ctx{$/;"	c
+AVFilterPacket	head.h	/^class AVFilterPacket{$/;"	c
+AVInputfilename	head.h	/^class AVInputfilename{$/;"	c
+AV_PTS	head.h	/^class AV_PTS{$/;"	c
+BOOL	head.h	/^typedef int                 BOOL;$/;"	t
+BYTE	head.h	/^typedef unsigned char       BYTE;$/;"	t
+BufferDataNode	head.h	/^class BufferDataNode$/;"	c
+BufferQueue	head.h	/^class BufferQueue{$/;"	c
+CAPTURE_H	capture.h	2;"	d
+CC	Makefile	/^CC            = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS        = -m$(ARCH) -pipe -O2 -Wno-strict-aliasing -W -fPIC $(DEFINES)  -msse -msse2 -msse3 -mmmx -m3dnow -openMP #-wall$/;"	m
+CHK_DIR_EXISTS	Makefile	/^CHK_DIR_EXISTS= test -d$/;"	m
+COMPRESS	Makefile	/^COMPRESS      = gzip -9f$/;"	m
+COPY	Makefile	/^COPY          = cp -f$/;"	m
+COPY_DIR	Makefile	/^COPY_DIR      = cp -f -R$/;"	m
+COPY_FILE	Makefile	/^COPY_FILE     = cp -f$/;"	m
+CXX	Makefile	/^CXX           = g++$/;"	m
+CXXFLAGS	Makefile	/^CXXFLAGS      = -m$(ARCH) -pipe -O2 -std=gnu++11 -Wall -W -fPIC $(DEFINES) -msse -msse2 -msse3 -mmmx -m3dnow -openMP$/;"	m
+Capture	capture.cpp	/^Capture::Capture()$/;"	f	class:Capture
+Capture	capture.h	/^class Capture$/;"	c
+Capture_ctx	head.h	/^class Capture_ctx{$/;"	c
+Capture_parse_ctx	head.h	/^class Capture_parse_ctx{$/;"	c
+DARCH	Makefile	/^	DARCH = 64$/;"	m
+DARCH	Makefile	/^	DARCH = 86$/;"	m
+DEFINES	Makefile	/^DEFINES       =$/;"	m
+DEL_DIR	Makefile	/^DEL_DIR       = rmdir$/;"	m
+DEL_FILE	Makefile	/^DEL_FILE      = rm -f$/;"	m
+DESTDIR	Makefile	/^DESTDIR       = ..\/bin$/;"	m
+DEVICE_STR	get_media_devices.c	66;"	d	file:
+DISTNAME	Makefile	/^DISTNAME      = tbsplay$/;"	m
+DWORD	head.h	/^typedef unsigned long       DWORD;$/;"	t
+DWORD_PTR	head.h	/^typedef ULONG_PTR DWORD_PTR, *PDWORD_PTR;$/;"	t
+DataQueneHead	head.h	/^    BufferDataNode * DataQueneHead;$/;"	m	class:BufferQueue
+DataQueneTail	head.h	/^    BufferDataNode * DataQueneTail;$/;"	m	class:BufferQueue
+DataQuene_Input	head.cpp	/^void DataQuene_Input(BufferQueue *bq,uint8_t * buffer,size_t size)$/;"	f
+DataQuene_get	head.cpp	/^BufferDataNode *DataQuene_get(BufferQueue *bq)$/;"	f
+FLOAT	head.h	/^typedef float               FLOAT;$/;"	t
+FLUSH_DATA	head.h	76;"	d
+FRAME_QUEUE_SIZE	head.h	84;"	d
+FrameNode	head.h	/^class FrameNode {$/;"	c
+FrameQueneHead	head.h	/^    FrameNode *FrameQueneHead = nullptr;$/;"	m	class:FrameQueue
+FrameQueneTail	head.h	/^    FrameNode *FrameQueneTail = nullptr;$/;"	m	class:FrameQueue
+FrameQuene_Input	head.cpp	/^void FrameQuene_Input(FrameQueue *fq,AVFrame *avframe)$/;"	f
+FrameQuene_get	head.cpp	/^FrameNode *FrameQuene_get(FrameQueue *fq)$/;"	f
+FrameQueue	head.h	/^class FrameQueue {$/;"	c
+GET_MEDIA_DEVICES_VERSION	get_media_devices.h	23;"	d
+HEAD_H	head.h	2;"	d
+HIBYTE	head.h	71;"	d
+HIWORD	head.h	69;"	d
+INCPATH	Makefile	/^INCPATH       = -I. -isystem \/usr\/local\/include -I. -isystem \/usr\/include\/libdrm $/;"	m
+INSTALL_DIR	Makefile	/^INSTALL_DIR   = cp -f -R$/;"	m
+INSTALL_FILE	Makefile	/^INSTALL_FILE  = install -m 644 -p$/;"	m
+INSTALL_PROGRAM	Makefile	/^INSTALL_PROGRAM = install -m 755 -p$/;"	m
+INT	head.h	/^typedef int                 INT;$/;"	t
+InputFmtCtx	head.h	/^    AVFormatContext *InputFmtCtx = nullptr;$/;"	m	class:AVFile_Ctx
+LFLAGS	Makefile	/^LFLAGS        = -m$(ARCH) -Wl,-O1$/;"	m
+LIBS	Makefile	/^LIBS          = $(SUBLIBS)  \/usr\/local\/lib\/libavdevice.a \/usr\/local\/lib\/libavfilter.a \/usr\/local\/lib\/libavformat.a \/usr\/local\/lib\/libavcodec.a \/usr\/local\/lib\/libavutil.a \/usr\/local\/lib\/libpostproc.a \/usr\/local\/lib\/libswresample.a \/usr\/local\/lib\/libswscale.a \/lib64\/libSDL2.a \/lib64\/libSDL2_test.a \/lib64\/libSDL2main.a \/usr\/local\/lib\/libx264.a \/usr\/local\/lib\/libfdk-aac.a \/usr\/local\/lib\/libvpx.a \/usr\/local\/lib\/libx265.a \/usr\/local\/lib\/libva.a \/usr\/local\/lib\/libva-glx.a \/usr\/local\/lib\/libva-drm.a \/usr\/local\/lib\/libva-x11.a \/usr\/local\/lib\/libwayland-client.a \/usr\/local\/lib\/libwayland-cursor.a \/usr\/local\/lib\/libwayland-egl.a \/usr\/local\/lib\/libwayland-server.a  \/usr\/local\/lib\/dri\/i965_drv_video.a -lxcb -lxcb-shm -lxcb-shape -lxcb-xfixes -lasound -lbz2 -lz -llzma -lmp3lame -ldrm -lX11 -lXext -lXfixes -lXau -lvorbis -lvorbisenc -lpthread  -ldl -lm -lrt $/;"	m
+LIBSPATH	Makefile	/^LIBSPATH      = \/usr\/local\/lib$/;"	m
+LINK	Makefile	/^LINK          = g++$/;"	m
+LOBYTE	head.h	70;"	d
+LOWORD	head.h	68;"	d
+MAKEFILE	Makefile	/^MAKEFILE      = Makefile$/;"	m
+MAKELONG	head.h	67;"	d
+MAKEWORD	head.h	66;"	d
+MAX_AUDIO_SIZE	head.h	78;"	d
+MAX_VIDEO_SIZE	head.h	79;"	d
+MEDIA_BUS_PCI	get_media_devices.h	/^	MEDIA_BUS_PCI,$/;"	e	enum:bus_type
+MEDIA_BUS_UNKNOWN	get_media_devices.h	/^	MEDIA_BUS_UNKNOWN,$/;"	e	enum:bus_type
+MEDIA_BUS_USB	get_media_devices.h	/^	MEDIA_BUS_USB,$/;"	e	enum:bus_type
+MEDIA_BUS_VIRTUAL	get_media_devices.h	/^	MEDIA_BUS_VIRTUAL,$/;"	e	enum:bus_type
+MEDIA_DVB_AUDIO	get_media_devices.h	/^	MEDIA_DVB_AUDIO,$/;"	e	enum:device_type
+MEDIA_DVB_CA	get_media_devices.h	/^	MEDIA_DVB_CA,$/;"	e	enum:device_type
+MEDIA_DVB_DEMUX	get_media_devices.h	/^	MEDIA_DVB_DEMUX,$/;"	e	enum:device_type
+MEDIA_DVB_DVR	get_media_devices.h	/^	MEDIA_DVB_DVR,$/;"	e	enum:device_type
+MEDIA_DVB_FRONTEND	get_media_devices.h	/^	MEDIA_DVB_FRONTEND,$/;"	e	enum:device_type
+MEDIA_DVB_NET	get_media_devices.h	/^	MEDIA_DVB_NET,$/;"	e	enum:device_type
+MEDIA_DVB_OSD	get_media_devices.h	/^	MEDIA_DVB_OSD,$/;"	e	enum:device_type
+MEDIA_DVB_SEC	get_media_devices.h	/^	MEDIA_DVB_SEC,$/;"	e	enum:device_type
+MEDIA_DVB_VIDEO	get_media_devices.h	/^	MEDIA_DVB_VIDEO = 100,$/;"	e	enum:device_type
+MEDIA_SND_CAP	get_media_devices.h	/^	MEDIA_SND_CAP,$/;"	e	enum:device_type
+MEDIA_SND_CARD	get_media_devices.h	/^	MEDIA_SND_CARD = 200,$/;"	e	enum:device_type
+MEDIA_SND_CONTROL	get_media_devices.h	/^	MEDIA_SND_CONTROL,$/;"	e	enum:device_type
+MEDIA_SND_HW	get_media_devices.h	/^	MEDIA_SND_HW,$/;"	e	enum:device_type
+MEDIA_SND_OUT	get_media_devices.h	/^	MEDIA_SND_OUT,$/;"	e	enum:device_type
+MEDIA_SND_SEQ	get_media_devices.h	/^	MEDIA_SND_SEQ,$/;"	e	enum:device_type
+MEDIA_SND_TIMER	get_media_devices.h	/^	MEDIA_SND_TIMER,$/;"	e	enum:device_type
+MEDIA_V4L_RADIO	get_media_devices.h	/^	MEDIA_V4L_RADIO,$/;"	e	enum:device_type
+MEDIA_V4L_SUBDEV	get_media_devices.h	/^	MEDIA_V4L_SUBDEV,$/;"	e	enum:device_type
+MEDIA_V4L_VBI	get_media_devices.h	/^	MEDIA_V4L_VBI,$/;"	e	enum:device_type
+MEDIA_V4L_VIDEO	get_media_devices.h	/^	MEDIA_V4L_VIDEO = 0,$/;"	e	enum:device_type
+MFILE_H	mfile.h	2;"	d
+MKDIR	Makefile	/^MKDIR         = mkdir -p$/;"	m
+MOVE	Makefile	/^MOVE          = mv -f$/;"	m
+Mdata	head.h	/^class Mdata{$/;"	c
+Mfile	mfile.cpp	/^Mfile::Mfile()$/;"	f	class:Mfile
+Mfile	mfile.h	/^class Mfile$/;"	c
+Mutex	head.h	/^    SDL_mutex *Mutex = nullptr;$/;"	m	class:FrameQueue
+Mutex	head.h	/^    SDL_mutex *Mutex;$/;"	m	class:BufferQueue
+NONE	get_media_devices.h	/^	NONE    = 65534,$/;"	e	enum:device_type
+OBJECTS	Makefile	/^OBJECTS       = main.o \\$/;"	m
+PARSE_OPTIONS_H	parse_options.h	2;"	d
+PDWORD_PTR	head.h	/^typedef ULONG_PTR DWORD_PTR, *PDWORD_PTR;$/;"	t
+PFLOAT	head.h	/^typedef FLOAT               *PFLOAT;$/;"	t
+PUINT	head.h	/^typedef unsigned int        *PUINT;$/;"	t
+PULONG_PTR	head.h	/^typedef unsigned long ULONG_PTR, *PULONG_PTR;$/;"	t
+PacketQueue	head.h	/^class PacketQueue {$/;"	c
+Parse_Parameter	head.h	/^class Parse_Parameter{$/;"	c
+Parse_options	parse_options.cpp	/^Parse_options::Parse_options()$/;"	f	class:Parse_options
+Parse_options	parse_options.h	/^class Parse_options$/;"	c
+RaiseVolume	avfile.cpp	/^static void RaiseVolume(char* buf, int size, int uRepeat, double vol)\/\/buf为需要调节音量的音频数据块首地址指针，size为长度，uRepeat为重复次数，通常设为1，vol为增益倍数,可以小于1$/;"	f	file:
+RaiseVolume	capture.cpp	/^static void RaiseVolume(char* buf, int size, int uRepeat, double vol)$/;"	f	file:
+SAMPLE_QUEUE_SIZE	head.h	83;"	d
+SDL2_Packet	head.h	/^class SDL2_Packet{$/;"	c
+SDL_AUDIO_BUFFER_SIZE	head.h	72;"	d
+SUBPICTURE_QUEUE_SIZE	head.h	82;"	d
+SYMLINK	Makefile	/^SYMLINK       = ln -f -s$/;"	m
+TAR	Makefile	/^TAR           = tar -cf$/;"	m
+TARGET	Makefile	/^TARGET        = $(DESTDIR)\/$(DISTNAME)$/;"	m
+UINT	head.h	/^typedef unsigned int        UINT;$/;"	t
+ULONG_PTR	head.h	/^typedef unsigned long ULONG_PTR, *PULONG_PTR;$/;"	t
+UNKNOWN	get_media_devices.h	/^	UNKNOWN = 65535,$/;"	e	enum:device_type
+VIDEO_PICTURE_QUEUE_SIZE	head.h	81;"	d
+WORD	head.h	/^typedef unsigned short      WORD;$/;"	t
+a	head.h	/^    Mdata a;$/;"	m	class:Parse_Parameter
+a	head.h	/^    string a;$/;"	m	class:Capture_parse_ctx
+aDecoder	head.h	/^    AVCodec *aDecoder = nullptr;$/;"	m	class:AVFile_Ctx
+aDecoder	head.h	/^    AVCodec *aDecoder = nullptr;$/;"	m	class:Capture_ctx
+aDecoderCtx	head.h	/^    AVCodecContext *aDecoderCtx = nullptr;$/;"	m	class:AVFile_Ctx
+aDecoderCtx	head.h	/^    AVCodecContext *aDecoderCtx = nullptr;$/;"	m	class:Capture_ctx
+aEncoder	head.h	/^    AVCodec *aEncoder = nullptr;$/;"	m	class:Capture_ctx
+aEncoderCtx	head.h	/^    AVCodecContext *aEncoderCtx = nullptr;$/;"	m	class:Capture_ctx
+aInputFmtCtx	head.h	/^    AVFormatContext *aInputFmtCtx = nullptr;$/;"	m	class:Capture_ctx
+aOutStream	head.h	/^    AVStream *aOutStream = nullptr;$/;"	m	class:Capture_ctx
+aStream	head.h	/^    AVStream *aStream = nullptr;$/;"	m	class:AVFile_Ctx
+aStream	head.h	/^    AVStream *aStream = nullptr;$/;"	m	class:Capture_ctx
+aStreamNb	head.h	/^    int aStreamNb= -1;$/;"	m	class:AVFile_Ctx
+aStreamNb	head.h	/^    int aStreamNb= -1;$/;"	m	class:Capture_ctx
+a_encode	capture.cpp	/^static int a_encode(AVFormatContext* &ofc)$/;"	f	file:
+add_dvb_class	get_media_devices.c	/^static int add_dvb_class(struct media_device_entry *md)$/;"	f	file:
+add_snd_class	get_media_devices.c	/^static int add_snd_class(struct media_device_entry *md)$/;"	f	file:
+add_v4l_class	get_media_devices.c	/^static int add_v4l_class(struct media_device_entry *md)$/;"	f	file:
+adecFinished	head.h	/^    int adecFinished = 0;$/;"	m	class:Capture_ctx
+afilterpkt	head.h	/^    AVFilterPacket afilterpkt;$/;"	m	class:Capture_ctx
+apts	head.h	/^    AV_PTS apts;$/;"	m	class:Capture_ctx
+areadFinished	head.h	/^    int areadFinished = 0; \/\/文件读取完毕$/;"	m	class:AVFile_Ctx
+areadFinished	head.h	/^    int areadFinished = 0; \/\/文件读取完毕$/;"	m	class:Capture_ctx
+audioFinished	head.h	/^    int audioFinished = 0;$/;"	m	class:Capture_ctx
+audio_buf	head.h	/^    uint8_t *audio_buf;$/;"	m	class:AVFile_Ctx
+audio_buf	head.h	/^    uint8_t *audio_buf;$/;"	m	class:Capture_ctx
+audio_buf_index	head.h	/^    unsigned int audio_buf_index;$/;"	m	class:AVFile_Ctx
+audio_buf_index	head.h	/^    unsigned int audio_buf_index;$/;"	m	class:Capture_ctx
+audio_buf_size	head.h	/^    unsigned int audio_buf_size;$/;"	m	class:AVFile_Ctx
+audio_buf_size	head.h	/^    unsigned int audio_buf_size;$/;"	m	class:Capture_ctx
+audio_callback	avfile.cpp	/^static void audio_callback(void *, uint8_t *stream, int len)$/;"	f	file:
+audio_callback	capture.cpp	/^static void audio_callback(void *userdata, uint8_t *stream, int len)$/;"	f	file:
+audio_capture	capture.cpp	/^static int audio_capture(void *)$/;"	f	file:
+audio_clock	head.h	/^    double audio_clock; \/\/\/音频时钟$/;"	m	class:AVFile_Ctx
+audio_clock	head.h	/^    double audio_clock; \/\/\/音频时钟$/;"	m	class:Capture_ctx
+audio_decode_frame	avfile.cpp	/^static int audio_decode_frame(double *pts_ptr)$/;"	f	file:
+audio_decode_frame	capture.cpp	/^static int audio_decode_frame(double *pts_ptr)$/;"	f	file:
+audio_encode_frame_write	capture.cpp	/^static int audio_encode_frame_write(AVFormatContext *ofc, AVStream *aostream)$/;"	f	file:
+audio_hw_buf_size	head.h	/^    int audio_hw_buf_size;$/;"	m	class:AVFile_Ctx
+audio_hw_buf_size	head.h	/^    int audio_hw_buf_size;$/;"	m	class:Capture_ctx
+audio_pcm_enc	capture.cpp	/^static int audio_pcm_enc(void *)$/;"	f	file:
+audio_pkt	head.h	/^    AVPacket audio_pkt;$/;"	m	class:AVFile_Ctx
+audio_pkt	head.h	/^    AVPacket audio_pkt;$/;"	m	class:Capture_ctx
+audio_pkt_data	head.h	/^    uint8_t *audio_pkt_data;$/;"	m	class:AVFile_Ctx
+audio_pkt_data	head.h	/^    uint8_t *audio_pkt_data;$/;"	m	class:Capture_ctx
+audio_pkt_size	head.h	/^    int audio_pkt_size;$/;"	m	class:AVFile_Ctx
+audio_pkt_size	head.h	/^    int audio_pkt_size;$/;"	m	class:Capture_ctx
+audio_player	capture.cpp	/^static int audio_player(void *)$/;"	f	file:
+audio_src_channel_layout	head.h	/^    int64_t audio_src_channel_layout;$/;"	m	class:AVFile_Ctx
+audio_src_channel_layout	head.h	/^    int64_t audio_src_channel_layout;$/;"	m	class:Capture_ctx
+audio_src_channels	head.h	/^    int audio_src_channels;$/;"	m	class:AVFile_Ctx
+audio_src_channels	head.h	/^    int audio_src_channels;$/;"	m	class:Capture_ctx
+audio_src_fmt	head.h	/^    enum AVSampleFormat audio_src_fmt;$/;"	m	class:AVFile_Ctx	typeref:enum:AVFile_Ctx::AVSampleFormat
+audio_src_fmt	head.h	/^    enum AVSampleFormat audio_src_fmt;$/;"	m	class:Capture_ctx	typeref:enum:Capture_ctx::AVSampleFormat
+audio_src_freq	head.h	/^    int audio_src_freq;$/;"	m	class:AVFile_Ctx
+audio_src_freq	head.h	/^    int audio_src_freq;$/;"	m	class:Capture_ctx
+audio_tgt_channel_layout	head.h	/^    int64_t audio_tgt_channel_layout;$/;"	m	class:AVFile_Ctx
+audio_tgt_channel_layout	head.h	/^    int64_t audio_tgt_channel_layout;$/;"	m	class:Capture_ctx
+audio_tgt_channels	head.h	/^    int audio_tgt_channels;$/;"	m	class:AVFile_Ctx
+audio_tgt_channels	head.h	/^    int audio_tgt_channels;$/;"	m	class:Capture_ctx
+audio_tgt_fmt	head.h	/^    enum AVSampleFormat audio_tgt_fmt;$/;"	m	class:AVFile_Ctx	typeref:enum:AVFile_Ctx::AVSampleFormat
+audio_tgt_fmt	head.h	/^    enum AVSampleFormat audio_tgt_fmt;$/;"	m	class:Capture_ctx	typeref:enum:Capture_ctx::AVSampleFormat
+audio_tgt_freq	head.h	/^    int audio_tgt_freq;$/;"	m	class:AVFile_Ctx
+audio_tgt_freq	head.h	/^    int audio_tgt_freq;$/;"	m	class:Capture_ctx
+audiofq	head.h	/^    FrameQueue audiofq;$/;"	m	class:Capture_ctx
+audioname	head.h	/^    string audioname;$/;"	m	class:AVInputfilename
+audioq	head.h	/^    PacketQueue audioq;$/;"	m	class:AVFile_Ctx
+audioq	head.h	/^    PacketQueue audioq;$/;"	m	class:Capture_ctx
+avOutputFmtCtx	head.h	/^    AVFormatContext *avOutputFmtCtx = nullptr;$/;"	m	class:Capture_ctx
+av_encode	capture.cpp	/^static int av_encode(void *)$/;"	f	file:
+av_player	avfile.cpp	/^static int av_player(void *arg)$/;"	f	file:
+av_show_input_information	capture.cpp	/^int Capture::av_show_input_information(string &filename)$/;"	f	class:Capture
+avencodeFinished	head.h	/^    int avencodeFinished =0;$/;"	m	class:Capture_ctx
+avplayerFinshed	head.h	/^    int avplayerFinshed = 0;$/;"	m	class:AVFile_Ctx
+buffer	head.h	/^    uint8_t * buffer;$/;"	m	class:BufferDataNode
+bufferSize	head.h	/^    size_t bufferSize;$/;"	m	class:BufferDataNode
+buffer_queue_deinit	head.cpp	/^void buffer_queue_deinit(BufferQueue *bq) {$/;"	f
+buffer_queue_flush	head.cpp	/^void buffer_queue_flush(BufferQueue *bq)$/;"	f
+buffer_queue_init	head.cpp	/^void buffer_queue_init(BufferQueue *bq) {$/;"	f
+bus	get_media_devices.c	/^	enum bus_type bus;$/;"	m	struct:media_device_entry	typeref:enum:media_device_entry::bus_type	file:
+bus_type	get_media_devices.h	/^enum bus_type {$/;"	g
+c	head.h	/^    Mdata c;$/;"	m	class:Parse_Parameter
+check_hardware_id	capture.cpp	/^int Capture::check_hardware_id(Parse_Parameter *pp)$/;"	f	class:Capture
+check_parameter	avfile.cpp	/^int AVFile::check_parameter(Parse_Parameter *pp)$/;"	f	class:AVFile
+check_parameter	capture.cpp	/^int Capture::check_parameter(Parse_Parameter *pp)$/;"	f	class:Capture
+closeSDL	avfile.cpp	/^static void closeSDL()$/;"	f	file:
+closeSDL	capture.cpp	/^static void closeSDL()$/;"	f	file:
+cond	head.h	/^    SDL_cond *cond;$/;"	m	class:PacketQueue
+count	head.h	/^    int64_t count = 0;$/;"	m	class:AV_PTS
+d	head.h	/^    int d = {0};$/;"	m	class:Parse_Parameter
+device	get_media_devices.c	/^	char *device;$/;"	m	struct:media_device_entry	file:
+device_type	get_media_devices.h	/^enum device_type {$/;"	g
+discover_media_devices	get_media_devices.c	/^void *discover_media_devices(void)$/;"	f
+display_media_devices	get_media_devices.c	/^void display_media_devices(void *opaque)$/;"	f
+dofile	mfile.cpp	/^size_t Mfile::dofile(void *__ptr, size_t __size, string mode)$/;"	f	class:Mfile
+e	head.h	/^    int e = {0};$/;"	m	class:Parse_Parameter
+en	head.h	/^    int en = {0};$/;"	m	class:Mdata
+enc_recoder_and_push_stream	capture.cpp	/^int Capture::enc_recoder_and_push_stream(Capture_parse_ctx &parsectx)$/;"	f	class:Capture
+encoder	head.h	/^    string encoder;$/;"	m	class:Capture_parse_ctx
+enumAVDevice	get_media_devices.c	/^int enumAVDevice(void)$/;"	f
+execute_parameter	avfile.cpp	/^int AVFile::execute_parameter(Parse_Parameter *pp)$/;"	f	class:AVFile
+execute_parameter	capture.cpp	/^int Capture::execute_parameter(Parse_Parameter *pp)$/;"	f	class:Capture
+f	head.h	/^    int f = {0};$/;"	m	class:Parse_Parameter
+fget_associated_device	get_media_devices.c	/^const char *fget_associated_device(void *opaque,$/;"	f
+fill_data_t	get_media_devices.c	/^typedef int (*fill_data_t)(struct media_device_entry *md);$/;"	t	file:
+filter_buffer_ctx	head.h	/^    AVFilterContext *filter_buffer_ctx;$/;"	m	class:AVFilterPacket
+filter_buffersink_ctx	head.h	/^    AVFilterContext *filter_buffersink_ctx;$/;"	m	class:AVFilterPacket
+filter_graph	head.h	/^    AVFilterGraph *filter_graph;$/;"	m	class:AVFilterPacket
+first_pkt	head.h	/^    AVPacketList *first_pkt;$/;"	m	class:PacketQueue
+fp	mfile.h	/^    FILE *fp;$/;"	m	class:Mfile
+fps	head.h	/^    int fps = 0;$/;"	m	class:AVFile_Ctx
+fps	head.h	/^    int fps = 0;$/;"	m	class:Capture_parse_ctx
+frame	head.h	/^    AVFrame *frame = nullptr;$/;"	m	class:FrameNode
+frame_queue_deinit	head.cpp	/^void frame_queue_deinit(FrameQueue *fq) {$/;"	f
+frame_queue_flush	head.cpp	/^void frame_queue_flush(FrameQueue *fq)$/;"	f
+frame_queue_init	head.cpp	/^void frame_queue_init(FrameQueue *fq) {$/;"	f
+free_media_devices	get_media_devices.c	/^void free_media_devices(void *opaque)$/;"	f
+fs	head.h	/^    int fs = 0;$/;"	m	class:AVFile_Ctx
+fs	head.h	/^    int fs = 0;$/;"	m	class:Capture_parse_ctx
+gavf_ctx	avfile.cpp	/^static AVFile_Ctx gavf_ctx;$/;"	v	file:
+gcap_ctx	capture.cpp	/^static Capture_ctx gcap_ctx;$/;"	v	file:
+getParseInformation	parse_options.cpp	/^Parse_Parameter* Parse_options::getParseInformation()$/;"	f	class:Parse_options
+get_associated_device	get_media_devices.c	/^const char *get_associated_device(void *opaque,$/;"	f
+get_bus	get_media_devices.c	/^static enum bus_type get_bus(char *device)$/;"	f	file:
+get_class	get_media_devices.c	/^static int get_class(char *class,$/;"	f	file:
+get_not_associated_device	get_media_devices.c	/^const char *get_not_associated_device(void *opaque,$/;"	f
+get_uevent_info	get_media_devices.c	/^static void get_uevent_info(struct media_device_entry *md_ptr, char *dname)$/;"	f	file:
+get_vaapi_format	capture.cpp	/^static AVPixelFormat get_vaapi_format(AVCodecContext *ctx, const AVPixelFormat *pix_fmts)$/;"	f	file:
+h	head.h	/^    int h = 0;$/;"	m	class:AVFile_Ctx
+h	head.h	/^    int h = 0;$/;"	m	class:Capture_parse_ctx
+h	head.h	/^    int h = {0};$/;"	m	class:Parse_Parameter
+hw_device_ctx	head.h	/^    AVBufferRef *hw_device_ctx = nullptr;$/;"	m	class:Capture_ctx
+i	head.h	/^    Mdata i;$/;"	m	class:Parse_Parameter
+i	head.h	/^    string i;$/;"	m	class:AVFile_Ctx
+init_audio_filters	capture.cpp	/^static int init_audio_filters(const char *filters_descr)$/;"	f	file:
+init_video_filters	capture.cpp	/^static int init_video_filters(const char *filters_descr)$/;"	f	file:
+interrupt_cb	avfile.cpp	/^static int interrupt_cb(void *ctx)$/;"	f	file:
+interrupt_cb	capture.cpp	/^static int interrupt_cb(void *ctx)$/;"	f	file:
+isMute	head.h	/^    bool isMute; \/\/静音标识$/;"	m	class:AVFile_Ctx
+isMute	head.h	/^    bool isMute; \/\/静音标识$/;"	m	class:Capture_ctx
+k	head.h	/^    int k = 0;$/;"	m	class:AVFile_Ctx
+k	head.h	/^    int k = 0;$/;"	m	class:Capture_parse_ctx
+k	head.h	/^    int k = {0};$/;"	m	class:Parse_Parameter
+keydone_thread	avfile.cpp	/^static int keydone_thread(void *)$/;"	f	file:
+keydone_thread	capture.cpp	/^static int keydone_thread(void *)$/;"	f	file:
+last_pkt	head.h	/^    AVPacketList *last_pkt;$/;"	m	class:PacketQueue
+long_options	parse_options.h	/^    struct option long_options[64] =$/;"	m	class:Parse_options	typeref:struct:Parse_options::option
+mAudioID	head.h	/^    SDL_AudioDeviceID mAudioID;$/;"	m	class:SDL2_Packet
+mVolume	head.h	/^    float mVolume; \/\/0~1 超过1 表示放大倍数$/;"	m	class:AVFile_Ctx
+mVolume	head.h	/^    float mVolume; \/\/0~1 超过1 表示放大倍数$/;"	m	class:Capture_ctx
+main	main.cpp	/^int main(int i_argc, char **pp_argv)$/;"	f
+major	get_media_devices.c	/^	unsigned major, minor;		\/* Device major\/minor *\/$/;"	m	struct:media_device_entry	file:
+md_entry	get_media_devices.c	/^	struct media_device_entry *md_entry;$/;"	m	struct:media_devices	typeref:struct:media_devices::media_device_entry	file:
+md_size	get_media_devices.c	/^	unsigned int md_size;$/;"	m	struct:media_devices	file:
+media_device_entry	get_media_devices.c	/^struct media_device_entry {$/;"	s	file:
+media_device_type	get_media_devices.c	/^const char *media_device_type(enum device_type type)$/;"	f
+media_devices	get_media_devices.c	/^struct media_devices {$/;"	s	file:
+minor	get_media_devices.c	/^	unsigned major, minor;		\/* Device major\/minor *\/$/;"	m	struct:media_device_entry	file:
+mopen	mfile.cpp	/^int Mfile::mopen(string filename, string mode)$/;"	f	class:Mfile
+mutex	head.h	/^    SDL_mutex *mutex;$/;"	m	class:PacketQueue
+nb_packets	head.h	/^    int nb_packets;$/;"	m	class:PacketQueue
+next	head.h	/^    BufferDataNode * next;$/;"	m	class:BufferDataNode
+next	head.h	/^    FrameNode *next = nullptr;$/;"	m	class:FrameNode
+node	get_media_devices.c	/^	char *node;$/;"	m	struct:media_device_entry	file:
+o	head.h	/^    Mdata o;$/;"	m	class:Parse_Parameter
+o	head.h	/^    string o;$/;"	m	class:Capture_parse_ctx
+openSDL	avfile.cpp	/^static int openSDL()$/;"	f	file:
+openSDL	capture.cpp	/^static int openSDL()$/;"	f	file:
+packet_queue_deinit	head.cpp	/^void packet_queue_deinit(PacketQueue *q) {$/;"	f
+packet_queue_flush	head.cpp	/^void packet_queue_flush(PacketQueue *q)$/;"	f
+packet_queue_get	head.cpp	/^int packet_queue_get(PacketQueue *q, AVPacket *pkt, int block) {$/;"	f
+packet_queue_init	head.cpp	/^void packet_queue_init(PacketQueue *q) {$/;"	f
+packet_queue_put	head.cpp	/^int packet_queue_put(PacketQueue *q, AVPacket *pkt) {$/;"	f
+parse	parse_options.cpp	/^int Parse_options::parse(int i_argc, char **pp_argv)$/;"	f	class:Parse_options
+parse_ctx	head.h	/^    Capture_parse_ctx parse_ctx;$/;"	m	class:Capture_ctx
+player	avfile.cpp	/^int AVFile::player(char *avfilename)$/;"	f	class:AVFile
+player	capture.cpp	/^int Capture::player(Capture_parse_ctx &parsectx)$/;"	f	class:Capture
+pp	parse_options.h	/^    Parse_Parameter* pp = {nullptr};$/;"	m	class:Parse_options
+quit	head.h	/^    int quit = 0;$/;"	m	class:AVFile_Ctx
+quit	head.h	/^    int quit = 0;$/;"	m	class:Capture_ctx
+raw_recoder	capture.cpp	/^int Capture::raw_recoder(Capture_parse_ctx &parsectx)$/;"	f	class:Capture
+rawaudio_recording	capture.cpp	/^static int rawaudio_recording(void *arg)$/;"	f	file:
+rawvideo_recording	capture.cpp	/^static int rawvideo_recording(void *arg)$/;"	f	file:
+sample	head.h	/^    int sample = 0;$/;"	m	class:AVFile_Ctx
+sample	head.h	/^    int sample = 0;$/;"	m	class:Capture_parse_ctx
+screen	head.h	/^    SDL_Window *screen;$/;"	m	class:SDL2_Packet
+sdl2pkt	head.h	/^    SDL2_Packet sdl2pkt;$/;"	m	class:AVFile_Ctx
+sdl2pkt	head.h	/^    SDL2_Packet sdl2pkt;$/;"	m	class:Capture_ctx
+sdlRect	head.h	/^    SDL_Rect sdlRect;$/;"	m	class:SDL2_Packet
+sdlRenderer	head.h	/^    SDL_Renderer* sdlRenderer;$/;"	m	class:SDL2_Packet
+sdlTexture	head.h	/^    SDL_Texture *sdlTexture;$/;"	m	class:SDL2_Packet
+show_information	avfile.cpp	/^int AVFile::show_information(char *avfilename)$/;"	f	class:AVFile
+show_input_information	capture.cpp	/^int Capture::show_input_information(Capture_parse_ctx &parsectx)$/;"	f	class:Capture
+size	head.h	/^    int size = 0;$/;"	m	class:FrameQueue
+size	head.h	/^    size_t size;$/;"	m	class:PacketQueue
+sort_media_device_entry	get_media_devices.c	/^static int sort_media_device_entry(const void *a, const void *b)$/;"	f	file:
+swr_ctx	head.h	/^    struct SwrContext *swr_ctx; \/\/用于解码后的音频格式转换$/;"	m	class:AVFile_Ctx	typeref:struct:AVFile_Ctx::SwrContext
+swr_ctx	head.h	/^    struct SwrContext *swr_ctx; \/\/用于解码后的音频格式转换$/;"	m	class:Capture_ctx	typeref:struct:Capture_ctx::SwrContext
+synchronize_video	avfile.cpp	/^static double synchronize_video(AVFrame *src_frame, double pts)$/;"	f	file:
+synchronize_video	capture.cpp	/^static double synchronize_video(AVFrame *src_frame, double pts) {$/;"	f	file:
+tbsread	capture.cpp	/^static int tbsread(int fd, uint32_t reg, uint32_t *val)$/;"	f	file:
+tbswrite	capture.cpp	/^static int tbswrite(int fd, uint32_t reg, uint32_t val)$/;"	f	file:
+type	get_media_devices.c	/^	enum device_type type;$/;"	m	struct:media_device_entry	typeref:enum:media_device_entry::device_type	file:
+usage	parse_options.cpp	/^void Parse_options::usage()$/;"	f	class:Parse_options
+v	head.h	/^    Mdata v;$/;"	m	class:Parse_Parameter
+v	head.h	/^    string v;$/;"	m	class:Capture_parse_ctx
+vDecoder	head.h	/^    AVCodec *vDecoder = nullptr;$/;"	m	class:AVFile_Ctx
+vDecoder	head.h	/^    AVCodec *vDecoder = nullptr;$/;"	m	class:Capture_ctx
+vDecoderCtx	head.h	/^    AVCodecContext *vDecoderCtx = nullptr;$/;"	m	class:AVFile_Ctx
+vDecoderCtx	head.h	/^    AVCodecContext *vDecoderCtx = nullptr;$/;"	m	class:Capture_ctx
+vEncoder	head.h	/^    AVCodec *vEncoder = nullptr;$/;"	m	class:Capture_ctx
+vEncoderCtx	head.h	/^    AVCodecContext *vEncoderCtx = nullptr;$/;"	m	class:Capture_ctx
+vInputFmtCtx	head.h	/^    AVFormatContext *vInputFmtCtx = nullptr;$/;"	m	class:Capture_ctx
+vOutStream	head.h	/^    AVStream *vOutStream = nullptr;$/;"	m	class:Capture_ctx
+vStream	head.h	/^    AVStream *vStream = nullptr;$/;"	m	class:AVFile_Ctx
+vStream	head.h	/^    AVStream *vStream = nullptr;$/;"	m	class:Capture_ctx
+vStreamNb	head.h	/^    int vStreamNb = -1;$/;"	m	class:AVFile_Ctx
+vStreamNb	head.h	/^    int vStreamNb = -1;$/;"	m	class:Capture_ctx
+v_encode	capture.cpp	/^static int v_encode(AVFormatContext* &ofc)$/;"	f	file:
+val	head.h	/^    double val = {0.0};$/;"	m	class:AV_PTS
+val	head.h	/^    string val;$/;"	m	class:Mdata
+vbitrate	head.h	/^    int vbitrate = 0;$/;"	m	class:AVFile_Ctx
+vbitrate	head.h	/^    int vbitrate = 0;$/;"	m	class:Capture_parse_ctx
+vdecFinished	head.h	/^    int vdecFinished = 0;$/;"	m	class:Capture_ctx
+vfilterpkt	head.h	/^    AVFilterPacket vfilterpkt;$/;"	m	class:AVFile_Ctx
+vfilterpkt	head.h	/^    AVFilterPacket vfilterpkt;$/;"	m	class:Capture_ctx
+videname	head.h	/^    string videname;$/;"	m	class:AVInputfilename
+videoFinished	head.h	/^    int videoFinished = 0;$/;"	m	class:Capture_ctx
+video_capture	capture.cpp	/^static int video_capture(void *)$/;"	f	file:
+video_clock	head.h	/^    double video_clock; \/\/\/<pts of last decoded frame \/ predicted pts of next decoded frame$/;"	m	class:AVFile_Ctx
+video_clock	head.h	/^    double video_clock; \/\/\/<pts of last decoded frame \/ predicted pts of next decoded frame$/;"	m	class:Capture_ctx
+video_encode_frame_write	capture.cpp	/^static int video_encode_frame_write(AVFormatContext *ofc, AVStream *vostream)$/;"	f	file:
+video_pix_enc	capture.cpp	/^static int video_pix_enc(void *)$/;"	f	file:
+video_player	capture.cpp	/^static int video_player(void *)$/;"	f	file:
+video_thread	avfile.cpp	/^static int video_thread(void *)$/;"	f	file:
+video_thread	capture.cpp	/^static int video_thread(void *)$/;"	f	file:
+videofq	head.h	/^    FrameQueue videofq;$/;"	m	class:Capture_ctx
+videoq	head.h	/^    PacketQueue videoq;$/;"	m	class:AVFile_Ctx
+videoq	head.h	/^    PacketQueue videoq;$/;"	m	class:Capture_ctx
+vpts	head.h	/^    AV_PTS vpts;$/;"	m	class:Capture_ctx
+vreadFinished	head.h	/^    int vreadFinished = 0; \/\/文件读取完毕$/;"	m	class:AVFile_Ctx
+vreadFinished	head.h	/^    int vreadFinished = 0; \/\/文件读取完毕$/;"	m	class:Capture_ctx
+w	head.h	/^    int w = 0;$/;"	m	class:AVFile_Ctx
+w	head.h	/^    int w = 0;$/;"	m	class:Capture_parse_ctx
+x	head.h	/^    Mdata x;$/;"	m	class:Parse_Parameter
+y	head.h	/^    Mdata y;$/;"	m	class:Parse_Parameter
+~AVFile	avfile.cpp	/^AVFile::~AVFile()$/;"	f	class:AVFile
+~Capture	capture.cpp	/^Capture::~Capture()$/;"	f	class:Capture
+~Mfile	mfile.cpp	/^Mfile::~Mfile()$/;"	f	class:Mfile
+~Parse_options	parse_options.cpp	/^Parse_options::~Parse_options()$/;"	f	class:Parse_options
