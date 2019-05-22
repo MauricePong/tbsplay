@@ -21,7 +21,11 @@
   grub2-set-default 0
 
   reboot
-
+  
+  Note:
+  centos7update failed : has invalid signatrue ,..load the kernel first;
+  into bios，close secure boot；
+  
   uname -r
 
   ls /dev/dri/renderD128 
