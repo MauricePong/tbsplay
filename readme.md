@@ -155,6 +155,67 @@ struct v4l2_tbs_data{
 
   F11          : toggle full screen
 
+udp AVOptions:
+
+  -buffer_size       <int>        ED....... System data size (in bytes) (from -1 to INT_MAX) (default -1) 
+	
+  -bitrate           <int64>      E........ Bits to send per second (from 0 to I64_MAX) (default 0)
+	
+  -burst_bits        <int64>      E........ Max length of bursts in bits (when using bitrate) (from 0 to I64_MAX) (default 0)
+	
+  -localport         <int>        ED....... Local port (from -1 to INT_MAX) (default -1)
+	
+  -local_port        <int>        ED....... Local port (from -1 to INT_MAX) (default -1)
+	
+  -localaddr         <string>     ED....... Local address
+	
+  -udplite_coverage  <int>        ED....... choose UDPLite head size which should be validated by checksum (from 0 to INT_MAX) (default 0)
+  -pkt_size          <int>        ED....... Maximum UDP packet size (from -1 to INT_MAX) (default 1472)
+	
+  -reuse             <boolean>    ED....... explicitly allow reusing UDP sockets (default auto)
+	
+  -reuse_socket      <boolean>    ED....... explicitly allow reusing UDP sockets (default auto)
+	
+  -broadcast         <boolean>    E........ explicitly allow or disallow broadcast destination (default false)
+	
+  -ttl               <int>        E........ Time to live (multicast only) (from 0 to INT_MAX) (default 16)
+	
+  -connect           <boolean>    ED....... set if connect() should be called on socket (default false)
+	
+  -fifo_size         <int>        .D....... set the UDP receiving circular buffer size, expressed as a number of packets with size of 188 bytes (from 0 to INT_MAX) (default 28672)
+  -overrun_nonfatal  <boolean>    .D....... survive in case of UDP receiving circular buffer overrun (default false)
+	
+  -timeout           <int>        .D....... set raise error timeout (only in read mode) (from 0 to INT_MAX) (default 0)
+	
+  -sources           <string>     ED....... Source list
+	
+  -block             <string>     ED....... Block list
+
+rtp AVOptions:
+  -ttl               <int>        ED....... Time to live (in milliseconds, multicast only) (from -1 to INT_MAX) (default -1)
+	
+  -buffer_size       <int>        ED....... Send/Receive buffer size (in bytes) (from -1 to INT_MAX) (default -1)
+	
+  -rtcp_port         <int>        ED....... Custom rtcp port (from -1 to INT_MAX) (default -1)
+	
+  -local_rtpport     <int>        ED....... Local rtp port (from -1 to INT_MAX) (default -1)
+	
+  -local_rtcpport    <int>        ED....... Local rtcp port (from -1 to INT_MAX) (default -1)
+	
+  -connect           <boolean>    ED....... Connect socket (default false)
+	
+  -write_to_source   <boolean>    ED....... Send packets to the source address of the latest received packet (default false)
+	
+  -pkt_size          <int>        ED....... Maximum packet size (from -1 to INT_MAX) (default -1)
+	
+  -dscp              <int>        ED....... DSCP class (from -1 to INT_MAX) (default -1)
+	
+  -sources           <string>     ED....... Source list
+	
+  -block             <string>     ED....... Block list
+	
+  -fec               <string>     E........ FEC
+	
 ### #example:
 
  ./tbsplay  -i  "/dev/video0 hw1,0"  -o sdl2    <!--//Play the audio and video of the capture card port HDMI port 0 .-->
@@ -169,3 +230,6 @@ struct v4l2_tbs_data{
 
 ./tbsplay  -i    rtp://192.168.1.188:1234  -o sdl2  <!--//Play  network stream  rtp://192.168.1.188:1234-->
 
+./tbsplay -i   "/dev/video0 hw1,0"  -o  "udp://192.168.1.188:1234?pkt_size=1316&buffer_size=65535"
+
+"
