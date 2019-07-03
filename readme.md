@@ -170,6 +170,7 @@ udp AVOptions:
   -localaddr         <string>     ED....... Local address
 	
   -udplite_coverage  <int>        ED....... choose UDPLite head size which should be validated by checksum (from 0 to INT_MAX) (default 0)
+	
   -pkt_size          <int>        ED....... Maximum UDP packet size (from -1 to INT_MAX) (default 1472)
 	
   -reuse             <boolean>    ED....... explicitly allow reusing UDP sockets (default auto)
@@ -183,6 +184,7 @@ udp AVOptions:
   -connect           <boolean>    ED....... set if connect() should be called on socket (default false)
 	
   -fifo_size         <int>        .D....... set the UDP receiving circular buffer size, expressed as a number of packets with size of 188 bytes (from 0 to INT_MAX) (default 28672)
+	
   -overrun_nonfatal  <boolean>    .D....... survive in case of UDP receiving circular buffer overrun (default false)
 	
   -timeout           <int>        .D....... set raise error timeout (only in read mode) (from 0 to INT_MAX) (default 0)
@@ -192,6 +194,7 @@ udp AVOptions:
   -block             <string>     ED....... Block list
 
 rtp AVOptions:
+
   -ttl               <int>        ED....... Time to live (in milliseconds, multicast only) (from -1 to INT_MAX) (default -1)
 	
   -buffer_size       <int>        ED....... Send/Receive buffer size (in bytes) (from -1 to INT_MAX) (default -1)
@@ -232,4 +235,4 @@ rtp AVOptions:
 
 ./tbsplay -i   "/dev/video0 hw1,0"  -o  "udp://192.168.1.188:1234?pkt_size=1316&buffer_size=65535"
 
-"
+
